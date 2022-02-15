@@ -11,4 +11,4 @@ hashTable.Add("4", "to");
 hashTable.Add("5", "be");
 
 string strHold = hashTable.GetElement("0");
-System.Console.WriteLine("4th index value is : " + strHold);
+System.Console.WriteLine("0th index value is : " + strHold);
