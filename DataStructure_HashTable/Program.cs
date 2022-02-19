@@ -23,5 +23,10 @@ hashTable.Add("16", "paranoid");
 hashTable.Add("17", "avoidable");
 hashTable.Add("18", "situations”");
 
+<<<<<<< HEAD
 string strHold = hashTable.GetElement("7");
 System.Console.WriteLine("7th index value is : " + strHold);
+=======
+string strHold = hashTable.GetElement("0");
+System.Console.WriteLine("0th index value is : " + strHold);
+>>>>>>> 821fe6cbb9970f91b6adebf450abb265afa99d5c
