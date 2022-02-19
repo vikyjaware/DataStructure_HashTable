@@ -55,6 +55,23 @@ namespace DataStructure_HashTable
             return default(v);
         }
 
+        public void RemoveElement(k key)
+        {
+            int state = GetArrayPosition(key);
+            LinkedList<KeyValue<k, v>> list = GetLinkedListElement(state);
+            bool elementFound = false;
+            KeyValue<k, v> foundElement = default(KeyValue<k, v>);
+            foreach (KeyValue<k, v> item in list)
+            {
+                elementFound = true;
+                foundElement = item;
+            }
+            if (elementFound)
+            {
+                list.Remove(foundElement);
+            }
+        }
+
         public void Add(k key, v value)
         {
             int state = GetArrayPosition(key);
